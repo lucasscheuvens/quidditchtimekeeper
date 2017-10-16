@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- geometry -->
+    <integer name="viewport_width">100</integer>
+    <integer name="viewport_height">100</integer>
+    <integer name="viewport_center_x">50</integer>
+    <integer name="viewport_center_y">50</integer>
+    <string name="path_play">M 6.70000 91.33962 A 5.0000 5.00000 0 0 0 14.20006 95.66971 L 50.00000 75.00000 A 5.0000 5.00000 0 0 0 52.49994 70.66990 L 52.49994 29.33010 A 5.0000 5.00000 0 0 0 50.00000 25.00000 L 14.20006 4.33029 A 5.0000 5.00000 0 0 0 6.70000 8.66038 Z M 42.49994 70.66990 A 5.0000 5.00000 0 0 0 50.00000 75.00000 L 85.80028 54.33010 A 5.0000 5.00000 0 0 0 85.80028 45.66990 L 85.80028 45.66990 A 5.0000 5.00000 0 0 0 85.80028 45.66990 L 50.00000 25.00000 A 5.0000 5.00000 0 0 0 42.49994 29.33010 Z
+</string>
+    <string name="path_pause">M 6.70000 91.33962 A 5.0000 5.00000 0 0 0 11.70000 96.33962 L 26.70000 96.33962 A 5.0000 5.00000 0 0 0 31.70000 91.33962 L 31.70000 8.66038 A 5.0000 5.00000 0 0 0 26.70000 3.66038 L 11.70000 3.66038 A 5.0000 5.00000 0 0 0 6.70000 8.66038 Z M 63.30022 91.33962 A 5.0000 5.00000 0 0 0 68.30022 96.33962 L 83.30022 96.33962 A 5.0000 5.00000 0 0 0 88.30022 91.33962 L 88.30022 8.66038 A 5.0000 5.00000 0 0 0 83.30022 3.66038 L 68.30022 3.66038 A 5.0000 5.00000 0 0 0 63.30022 8.66038 Z
+</string>
+    <integer name="stroke_width">1</integer>
+
+    <!-- names -->
+    <string name="play">play</string>
+    <string name="pause">pause</string>
+    <string name="groupPlayPause">groupPlayPause</string>
+
+    <!-- drawing -->
+    <color name="stroke_color">@color/black</color>
+    <color name="playPauseFillColor">@color/black</color>
+
+    <!-- timing -->
+    <integer name="duration">250</integer>
+
+</resources>

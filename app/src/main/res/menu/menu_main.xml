@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:id="@+id/action_resort_penalties"
+        android:orderInCategory="100"
+        android:title="@string/action_resort_penalties"
+        android:icon="@drawable/ic_swap_vert_white"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="200"
+        android:title="@string/action_settings"
+        android:icon="@drawable/ic_settings_white"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/action_first_overtime"
+                android:orderInCategory="100"
+                android:title="Show First Overtime Instructions"
+                app:showAsAction="never"
+                />
+            <item
+                android:id="@+id/action_second_overtime"
+                android:orderInCategory="200"
+                android:title="Show Second Overtime Instructions"
+                app:showAsAction="never"/>
+            <item
+                android:id="@+id/action_donate"
+                android:orderInCategory="300"
+                android:title="Donate to the Developer"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+
+</menu>

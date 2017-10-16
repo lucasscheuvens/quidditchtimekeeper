@@ -1,0 +1,44 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="10dp"
+    android:id="@+id/teamnames"
+    android:divider="@color/divider"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <de.lucasscheuvens.qtk.AutoResizeTextView
+        android:paddingEnd="5dp"
+        android:id="@+id/teamname0"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/teamnames_divide"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:text="@string/team0"
+        android:includeFontPadding="false"
+        android:onClick="changeTeam0Info"/>
+    <RelativeLayout
+        android:id="@+id/teamnames_divide"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+    <de.lucasscheuvens.qtk.AutoResizeTextView
+        android:paddingStart="5dp"
+        android:id="@+id/teamname1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/teamnames_divide"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/textColor"
+        android:text="@string/team1"
+        android:includeFontPadding="false"
+        android:onClick="changeTeam1Info"/>
+</RelativeLayout>

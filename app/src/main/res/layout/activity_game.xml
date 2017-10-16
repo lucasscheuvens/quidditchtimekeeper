@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.lucasscheuvens.qtk.GameActivity"
+    android:id="@+id/top_wrapper">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:id="@+id/main_screen">
+
+        <include android:id="@+id/toolbar" layout="@layout/toolbar"/>
+        <include layout="@layout/stopwatch"/>
+
+        <RelativeLayout
+            android:id="@+id/restInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/divider1"
+                    android:layout_alignParentTop="true">
+                    <View style="@style/Divider"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teamnames_topwrapper"
+                    android:layout_below="@+id/divider1">
+                    <include layout="@layout/teamnames"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jerseys_topwrapper"
+                    android:layout_below="@+id/teamnames_topwrapper">
+                    <include layout="@layout/jerseys"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scores_topwrapper"
+                    android:layout_below="@+id/jerseys_topwrapper">
+                    <include layout="@layout/scores"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/divider2"
+                    android:layout_below="@+id/scores_topwrapper">
+                    <View style="@style/Divider"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/penalties_topwrapper"
+                    android:layout_below="@+id/divider2">
+                    <include layout="@layout/penalties"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <!--<LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View style="@style/Divider"/>
+                <include layout="@layout/teamnames"/>
+                <include layout="@layout/jerseys"/>
+                <include layout="@layout/scores"/>
+                <View style="@style/Divider"/>
+                <include layout="@layout/penalties"/>
+
+            </LinearLayout>-->
+
+            <include layout="@layout/teamname_team0" />
+            <include layout="@layout/teamname_team1" />
+            <include layout="@layout/penalty" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/penaltybuttons"/>
+    <include layout="@layout/notifications" />
+    <include layout="@layout/player_number_keyboard" />
+
+</RelativeLayout>
+
+
+
+

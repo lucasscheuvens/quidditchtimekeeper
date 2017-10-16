@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "de.lucasscheuvens.qtk"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 4
+        versionName "Eggplant"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        /*debug {
+            debuggable true
+        }*/
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.0.0'
+    compile 'com.android.support:design:26.0.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:process-phoenix:1.1.1'
+    compile 'com.facebook.stetho:stetho:1.4.2'
+}

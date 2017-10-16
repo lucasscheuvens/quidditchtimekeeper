@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="@dimen/scorefield_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="@dimen/scorefield_width"
+        android:layout_height="@dimen/scorefield_arrows_height"
+        android:src="@drawable/ic_score_up"
+        android:id="@+id/team0_score_up_second_overtime"
+        android:layout_gravity="bottom"
+        android:onClick="team0ScoreUp"
+        android:tag="second_overtime"
+        android:translationY="@dimen/scorefield_arrow_translation_up"/>
+
+    <de.lucasscheuvens.qtk.CustomScrollView
+        android:id="@+id/team0_second_overtime_scorefield"
+        android:layout_width="@dimen/scorefield_width"
+        android:layout_height="@dimen/scorefield_height"
+        android:layout_margin="0dp"
+        android:scrollbars="none">
+
+        <include layout="@layout/score_second_overtime_team0_numbers" />
+
+    </de.lucasscheuvens.qtk.CustomScrollView>
+
+    <ImageView
+        android:layout_width="@dimen/scorefield_width"
+        android:layout_height="@dimen/scorefield_arrows_height"
+        android:src="@drawable/ic_score_down"
+        android:id="@+id/team0_score_down_second_overtime"
+        android:layout_gravity="top"
+        android:onClick="team0ScoreDown"
+        android:tag="second_overtime"
+        android:translationY="@dimen/scorefield_arrow_translation_down"
+        android:translationZ="-1dp"/>
+
+</LinearLayout>

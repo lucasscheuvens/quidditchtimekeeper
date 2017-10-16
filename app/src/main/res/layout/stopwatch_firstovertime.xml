@@ -1,0 +1,100 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="@dimen/stopwatch_arrow_width"
+            android:paddingStart="@dimen/stopwatch_arrow_padding"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_keyboardarrow_left_black"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentStart="true"
+            android:onClick="firstOvertimeToRegTime"
+            android:id="@+id/first_overtime_arrow_left"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:onClick="animatePlayPause"
+            android:layout_gravity="start"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:id="@+id/play_pause_first_overtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_play" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <TextView
+            android:includeFontPadding="false"
+            android:id="@+id/timer_first_overtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="05:00"
+            android:textColor="@color/textColor"
+            android:textSize="47sp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:onClick="adjustTime"
+            android:tag="first_overtime"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:translationY="@dimen/translationYTermNames"
+            android:layout_below="@+id/timer_first_overtime">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="First Overtime"
+                android:textColor="@color/light_grey"
+                android:textSize="@dimen/termTextSize"
+                android:includeFontPadding="false"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="@dimen/stopwatch_arrow_width"
+            android:paddingEnd="@dimen/stopwatch_arrow_padding"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_keyboardarrow_right_black"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="firstOvertimeToSecondOvertime"
+            android:id="@+id/first_overtime_arrow_right"/>
+    </RelativeLayout>
+
+</LinearLayout>

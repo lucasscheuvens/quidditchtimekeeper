@@ -1,0 +1,33 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/score_wrapper_height"
+    android:layout_marginTop="0dp"
+    android:elevation="0dp"
+    android:gravity="center"
+    android:id="@+id/all_scores_wrapper">
+
+    <RelativeLayout
+        android:id="@+id/score_reg_time_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/score_reg_time"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/score_first_overtime_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/score_reg_time_wrapper">
+        <include layout="@layout/score_first_overtime"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/score_second_overtime_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/score_first_overtime_wrapper">
+        <include layout="@layout/score_second_overtime"/>
+    </RelativeLayout>
+
+</RelativeLayout>

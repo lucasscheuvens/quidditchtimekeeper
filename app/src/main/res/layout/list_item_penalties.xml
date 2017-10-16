@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/penalty_list_item_height">
+
+    <RelativeLayout
+        android:layout_width="@dimen/penalty_list_item_margin"
+        android:layout_height="@dimen/penalty_list_item_height"
+        android:layout_alignParentStart="true"
+        android:id="@+id/list_item_margin_left"/>
+
+    <RelativeLayout
+        android:id="@+id/penalty_color"
+        android:layout_toEndOf="@+id/list_item_margin_left"
+        android:layout_width="35dp"
+        android:layout_height="@dimen/penalty_list_item_height">
+
+        <ImageView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="0dp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/item_parent"
+        android:layout_toEndOf="@+id/penalty_color"
+        android:layout_width="@dimen/penalty_list_item_height"
+        android:layout_height="@dimen/penalty_list_item_height"
+        android:padding="5dp">
+        <TextView
+            android:includeFontPadding="false"
+            android:id="@+id/playerNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:padding="2dp"
+            android:gravity="center"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/playerName"
+        android:layout_toEndOf="@+id/item_parent"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_height="@dimen/penalty_list_item_height"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center_vertical"
+        android:textColor="@color/textColor"/>
+
+    <TextView
+        android:id="@+id/penalty_time_entered"
+        android:layout_toStartOf="@+id/penalty_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/penalty_list_item_height"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/termTextSize"/>
+
+    <TextView
+        android:id="@+id/penalty_countdown"
+        android:layout_toStartOf="@+id/list_item_margin_right"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/penalty_list_item_height"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textAppearanceLarge"
+        android:background="?android:attr/selectableItemBackgroundBorderless"/>
+
+    <RelativeLayout
+        android:layout_width="@dimen/penalty_list_item_margin"
+        android:layout_height="@dimen/penalty_list_item_height"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/list_item_margin_right"/>
+</RelativeLayout>

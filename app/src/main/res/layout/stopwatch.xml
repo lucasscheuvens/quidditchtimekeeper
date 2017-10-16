@@ -1,0 +1,33 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="0dp"
+    android:elevation="0dp"
+    android:gravity="center"
+    android:id="@+id/all_stopwatches_wrapper">
+
+    <RelativeLayout
+        android:id="@+id/stopwatch_reg_time_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/stopwatch_regtime"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/stopwatch_first_overtime_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/stopwatch_reg_time_wrapper">
+        <include layout="@layout/stopwatch_firstovertime"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/stopwatch_second_overtime_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/stopwatch_first_overtime_wrapper">
+        <include layout="@layout/stopwatch_secondovertime"/>
+    </RelativeLayout>
+
+</RelativeLayout>

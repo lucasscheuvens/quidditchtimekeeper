@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/notify_regtime" />
+    <include layout="@layout/notify_firstovertime" />
+    <include layout="@layout/notify_secondovertime" />
+    <include layout="@layout/notify_release_snitch" />
+    <include layout="@layout/notify_release_seekers" />
+    <include layout="@layout/notify_listresorted" />
+</RelativeLayout>

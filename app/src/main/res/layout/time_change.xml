@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="± 0 seconds"
+            android:includeFontPadding="false"
+            android:textSize="30sp"
+            android:textColor="@color/textColor"
+            android:layout_centerInParent="true"
+            android:id="@+id/timeChangeGlobal"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout android:id="@+id/minusTenSecs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="normal"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                app:backgroundTint="@color/white"
+                android:src="@drawable/ic_rewind_ten"
+                android:id="@+id/minusTenSecsFAB"
+                android:onClick="minusTenSecs"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/minusOneSec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="normal"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                app:backgroundTint="@color/white"
+                android:src="@drawable/ic_rewind_one"
+                android:id="@+id/minusOneSecFAB"
+                android:onClick="minusOneSec"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/plusOneSec"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="normal"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                app:backgroundTint="@color/white"
+                android:src="@drawable/ic_forward_one"
+                android:id="@+id/plusOneSecFAB"
+                android:onClick="plusOneSec"/>
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/plusTenSecs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fabSize="normal"
+                android:clickable="true"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                app:backgroundTint="@color/white"
+                android:src="@drawable/ic_forward_ten"
+                android:id="@+id/plusTenSecsFAB"
+                android:onClick="plusTenSecs"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

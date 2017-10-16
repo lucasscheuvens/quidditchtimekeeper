@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#FFFFFF</color>
+    <color name="colorPrimary">#9E9E9E</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#4CAF50</color>
+    <color name="textColorPrimary">#777777</color>
+    <color name="textColor">#000000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="red">#F44336</color>
+    <color name="green">#4CAF50</color>
+    <color name="blue">#2196F3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_transparent">#EE000000</color>
+    <color name="purple">#9C27B0</color>
+    <color name="orange">#FF9800</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="brown">#795548</color>
+    <color name="darkgreen">#388E3C</color>
+    <color name="darkred">#B71C1C</color>
+    <color name="darkblue">#303F9F</color>
+    <color name="darkpurple">#512DA8</color>
+    <color name="cyan">#80DEEA</color>
+    <color name="petrol">#0097A7</color>
+    <color name="pink">#F48FB1</color>
+
+    <color name="grey">#9E9E9E</color>
+    <color name="divider">#9E9E9E</color>
+    <color name="light_grey">#BDBDBD</color>
+    <color name="lightlight_grey">#EEEEEE</color>
+
+    <color name="card_blue">#1976D2</color>
+    <color name="card_yellow">#FFEB3B</color>
+    <color name="card_red">#E53935</color>
+
+    <color name="shadow">#55000000</color>
+
+    <color name="jersey_border_color">#000000</color>
+    <color name="snitch_yellow">#FFEB3B</color>
+
+    <color name="overlay_background">#DD000000</color>
+    <color name="number_keyboard_background">#FFF5F5F5</color>
+
+</resources>

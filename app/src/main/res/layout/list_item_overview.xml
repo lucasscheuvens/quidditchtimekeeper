@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="88dp"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:clickable="true"
+    android:background="?attr/selectableItemBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="3dp">
+        <ImageView
+            android:layout_height="41dp"
+            android:layout_width="41dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/team0jersey"
+            android:src="@drawable/ic_shirt_red"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Dresden Deluminators"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/team0jersey"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:includeFontPadding="false"
+            android:textSize="17sp"
+            android:id="@+id/team0name"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:layout_centerInParent="true"
+            android:textSize="12sp"
+            android:includeFontPadding="false"/>
+
+        <ImageView
+            android:layout_height="41dp"
+            android:layout_width="41dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/team1jersey"
+            android:src="@drawable/ic_shirt_green"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Rheinos Bonn"
+            android:paddingEnd="5dp"
+            android:paddingBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/team1jersey"
+            android:includeFontPadding="false"
+            android:textSize="17sp"
+            android:id="@+id/team1name"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="14. Jan 2017, 3:52 p.m."
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textSize="10sp"
+            android:id="@+id/datetime"/>
+
+        <RelativeLayout
+            android:layout_height="46dp"
+            android:layout_width="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="888 : 888*"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:includeFontPadding="false"
+                android:id="@+id/score"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
