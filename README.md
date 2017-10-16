@@ -19,6 +19,7 @@ Features in the future:
 - display scores according to http://bit.ly/2hGvV7E
 - add possibility for reasoning of a penalty ("Contact from behind", "Contact around the neck", etc.)
 - create an API to submit game information to a server (e.g, JSON string)
+  - live data support
 - create an interface to download game information from a server
 - add possibility to design your own jersey online and download it to the app
 - create a data base of teams in Europe on quidditchtimekeeper.org with their
