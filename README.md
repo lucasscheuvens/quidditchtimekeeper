@@ -30,4 +30,4 @@ Features in the future:
     - position
   - coat of arms
 
-Licensed under the [GNU GENERAL PUBLIC LICENSE](LICENSE)
+Licensed under the [GNU GENERAL PUBLIC LICENSE](LICENSE).
