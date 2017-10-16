@@ -29,3 +29,5 @@ Features in the future:
     - name
     - position
   - coat of arms
+
+Licensed under the GNU GENERAL PUBLIC LICENSE
